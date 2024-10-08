@@ -43,7 +43,7 @@ export const Styles = styled.div`
 
     table.pvtTable thead tr th,
     table.pvtTable tbody tr th {
-      background-color: ${theme.colors.grayscale.light5};
+      background-color: ${theme.colors.success};
       border-top: 1px solid ${theme.colors.grayscale.light2};
       border-left: 1px solid ${theme.colors.grayscale.light2};
       font-size: ${theme.typography.sizes.s}px;
@@ -113,6 +113,7 @@ export const Styles = styled.div`
 
     table.pvtTable tbody tr th.pvtRowLabel {
       vertical-align: baseline;
+      
     }
 
     .pvtTotal,

@@ -16,6 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+//import { PluginPivotTableBng } from 'plugin-pivot-table-bng';
+import { SupersetPluginChartHelloBng } from 'superset-plugin-chart-hello-bng';
 import { isFeatureEnabled, FeatureFlag, Preset } from '@superset-ui/core';
 import CalendarChartPlugin from '@superset-ui/legacy-plugin-chart-calendar';
 import ChordChartPlugin from '@superset-ui/legacy-plugin-chart-chord';
@@ -99,6 +102,8 @@ export default class MainPreset extends Preset {
       name: 'Legacy charts',
       presets: [new DeckGLChartPreset()],
       plugins: [
+        //new PluginPivotTableBng().configure({ key: 'ext-pivot-table-bng' }),
+        new SupersetPluginChartHelloBng().configure({ key: 'ext-hello-bng' }),
         new AreaChartPlugin().configure({ key: 'area' }),
         new BarChartPlugin().configure({ key: 'bar' }),
         new BigNumberChartPlugin().configure({ key: 'big_number' }),
